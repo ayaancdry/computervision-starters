@@ -33,7 +33,7 @@ First, resize the image into `64x128` pixels (This is a standard value, it can b
 
 The 64x128 image in our example be : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%201.png)
+![Untitled](/HOG/Documentation%20Resources/64x128_demo.png)
 
 ### Gradient and Gradient Orientation Calculation
 
@@ -42,19 +42,19 @@ The 64x128 image in our example be :
 Apply Sobel Filters to get - 
 ***Gradient in x direction :***
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%202.png)
+![Untitled](/HOG/Documentation%20Resources/gradient_x.png)
 
 ***Gradient in y direction :*** 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%203.png)
+![Untitled](/HOG/Documentation%20Resources/gradient_y.png)
 
 ***Total gradient is then given by :*** 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%204.png)
+![Untitled](/HOG/Documentation%20Resources/gradient_magnitude.png)
 
 The gradient orientation is given by : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%205.png)
+![Untitled](/HOG/Documentation%20Resources/gradient_orientation.png)
 
 </aside>
 
@@ -65,13 +65,13 @@ The gradient orientation is given by :
 
 The image with the 128 cells can be shown as : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%206.png)
+![Untitled](/HOG/Documentation%20Resources/128_celled_demo.png)
 
 - This is a grid with 8x16 cells. Each cell is 8x8 pixels.
 
 Each cell (0f 8x8 pixel) can be shown as : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%207.png)
+![Untitled](/HOG/Documentation%20Resources/each_cell_demo.png)
 
 Now, in each cell, we need to find the *gradient magnitude* and *gradient orientation* for `each` pixel. 
 
@@ -94,7 +94,7 @@ Rules while plotting the histogram :
 - Create `9` bins of size `20` each. This is because the orientations can be from `0 to 180`.
 - The histogram can be shown as :
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%208.png)
+![Untitled](/HOG/Documentation%20Resources/histogram_demo.png)
 
 Each `bar` here is of 0-20, 20-40, 40-60, 60-80, …. 160-180. 
 
@@ -118,7 +118,7 @@ Now, we will create *blocks* each of size `2x2` cells. For each of the block, we
 
 The 2x2 cells will be formed in such a manner : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%209.png)
+![Untitled](/HOG/Documentation%20Resources/block_creation_demo.png)
 
 We will start creating the blocks from the top left corner and then keep sliding it as shown.
 
@@ -132,7 +132,7 @@ The next procedure will be the normalisation of these vectors.
 
 Normalise each block (each feature vector of size 36). The procedure of normalisation can be shown as : 
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled%2010.png)
+![Untitled](/HOG/Documentation%20Resources/normalisation_process.png)
 
 ### Descriptor Formation
 
