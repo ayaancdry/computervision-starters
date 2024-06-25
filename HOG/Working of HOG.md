@@ -15,7 +15,7 @@
 
 ### How object detection will be done here
 
-![Untitled](Computer-Vision---Basic-Applications/HOG/Documentation Resources/Untitled/roadmap.png)
+![Untitled](/HOG/Documentation%20Resources/roadmap.png)
 
 - We first create a dataset which will contain images of pedestrians in different environments, so that our model will be able to learn what pedestrians look like. This forms the foundation for training of the model.
 - We will then encode the images into feature spaces.
