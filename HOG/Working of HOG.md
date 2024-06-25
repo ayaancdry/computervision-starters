@@ -12,11 +12,10 @@
 - Gradient in an image measures how the intensity of pixel changes, that is, it shows how light or dark the image is changing at any point. *It is the change in intensity at any particular pixel*
 - An edge is where there is a significant change in intensity, like the border of an object.
 
-(PS : Learn the Mermaid Coding in Notion ASAP : https://www.notion.vip/insights/notion-flowchart-generator-updated-and-supercharged)
 
 ### How object detection will be done here
 
-![Untitled](Working%20of%20HOG%20a6f89c9b047845c0bcf3ef204a6e00ad/Untitled.png)
+![Untitled](Computer-Vision---Basic-Applications/HOG/Documentation Resources/Untitled/roadmap.png)
 
 - We first create a dataset which will contain images of pedestrians in different environments, so that our model will be able to learn what pedestrians look like. This forms the foundation for training of the model.
 - We will then encode the images into feature spaces.
