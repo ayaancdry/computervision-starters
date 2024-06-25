@@ -1,1 +1,1 @@
-
+This folder contains the implementation of the HOG algo, which is the **Histogram of Oriented Gradients**. The folder contains the implementation code, the image file on which the algo has been performed as well as a documentation on how the algo works. 
